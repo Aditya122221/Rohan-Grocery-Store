@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/CSS/Form.css">
+    <link rel="stylesheet" href="/CSS/5_SignUp.css">
+    <link rel="stylesheet" href="/CSS/SelectionAndScrollBar.css">
+    <link rel="stylesheet" href="/CSS/hexagon.css">
+    <link rel="stylesheet" href="/CSS/Loading.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+        </div>
+        <div class="row">
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+        </div>
+        <div class="row">
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+        </div>
+        <div class="row">
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+        </div>
+        <div class="row">
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+        </div>
+        <div class="row">
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+        </div>
+        <div class="row">
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+        </div>
+        <div class="row">
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+        </div>
+    </div>
+    <header>
+        <a href="/HTML/index.html"><img src="/Image/logo.jpg" alt="logo" height="80cm" width="80cm" class="logo"></a>
+    </header>
+    <div class="overall">
+        <div class="form">
+            <span id="error" style="color:green"></span>
+            <form name="myForm" onsubmit="return validate()" action="/logIn" method="POST">
+                <label for="name" class="required">Name</label><span id="nameError"></span>
+                <input type="text" name="name" id="name" required placeholder="Enter Name" minlength="3" maxlength="20"
+                    value="">
+
+                <label for="phonenumber" class="required">Phone Number</label><span id="numberError"></span>
+                <input type="text" name="phonenumber" id="number" required placeholder="Enter Phone Number"
+                    minlength="10" maxlength="10" value="">
+
+                <label for="email" class="required">Email</label><span id="emailError"></span>
+                <input type="email" name="email" id="email" placeholder="Enter Email id" value="" required>
+
+                <label for="password" class="required">Password</label><span id="errorPassword"></span>
+                <input type="password" name="password" id="password" required placeholder="Enter Password" minlength="8"
+                    value="">
+
+                <label for="conpassword" class="required">Confirm Password</label><span id="passwordError"></span>
+                <input type="password" name="conpassword" id="repassword" required placeholder="Re-enter the Password"
+                    value="">
+
+                <div class="button">
+                    <button type="submit" class="submit" id="sign">Sign Up</button>
+                    <button type="reset" class="submit" id="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+        <div class="login">Already have an account. <a href="Login.html">Log In</a></div>
+    </div>
+    <div class="loader">
+        <div class="box2">
+            <span class="nth child1"></span>
+            <span class="nth child2"></span>
+            <span class="nth child3"></span>
+            <h2>Loading...</h2>
+        </div>
+    </div>
+    <script src="/JavaScript/loader.js"></script>
+    <script src="/JavaScript/FormValidation.js"></script>
+</body>
+
+</html>

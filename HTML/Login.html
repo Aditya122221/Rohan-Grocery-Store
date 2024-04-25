@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="/CSS/Form.css">
+    <link rel="stylesheet" href="/CSS/4_Login.css">
+    <link rel="stylesheet" href="/CSS/SelectionAndScrollBar.css">
+    <link rel="stylesheet" href="/CSS/Loading.css">
+</head>
+
+<body>
+    <header>
+        <a href="/HTML/index.html"><img src="/Image/logo.jpg" alt="logo" class="logo"></a>
+    </header>
+    <div class="overall">
+        <div class="socialmedia">
+            <div class="text" id="socmed">Login using social media account to get quick access</div>
+            <div class="button">
+                <button class="but" id="facebook">
+                    <img src="/Image/facebook-app-symbol.png" alt="Facebook logo" style="height:17px; width:26px;">
+                    <a href="#" class="link facebook">Continue with Facebook</a>
+                </button>
+                <button class="but" id="google">
+                    <img src="/Image/google.png" alt="Google Logo" style="height:17px; width:17px;">
+                    <a href="#" class="link google">Continue with Google</a>
+                </button>
+                <button class="but" id="apple">
+                    <img src="/Image/apple-logo.png" alt="Apple logo" style="height:17px; width:17px;">
+                    <a href="#" class="link apple">Continue with Apple</a>
+                </button>
+            </div>
+        </div>
+        <div class="log">
+            <div class="text">Login to your account</div>
+            <div class="text">Don't have an account? <a href="/HTML/SignUp.html" class="sign">Sign up for free!</a>
+            </div>
+            <form action="/" method="POST">
+                <label for="email" id="Username" class="required">Username</label>
+                <input type="email" name="email" id="email" placeholder="Enter Username" required value="">
+                <label for="password" class="required">Password</label>
+                <input type="password" name="password" id="password" required placeholder="Enter Password">
+                <button class="submit" id="logIn">Log In</button>
+            </form>
+            <button class="submit" id="forpass">Forgot Password</button>
+        </div>
+    </div>
+    <div class="loader">
+        <div class="box2">
+            <span class="nth child1"></span>
+            <span class="nth child2"></span>
+            <span class="nth child3"></span>
+            <h2>Loading...</h2>
+        </div>
+    </div>
+    <script src="/JavaScript/loader.js"></script>
+</body>
+
+</html>

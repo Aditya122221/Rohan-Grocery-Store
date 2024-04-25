@@ -1,0 +1,25 @@
+body {
+  background-color: #dee2e6;
+}
+
+.bigbox {
+  display: flex;
+  gap: 2cm;
+  flex-wrap: wrap;
+  margin-top: 2cm;
+  padding: 2cm;
+  background-color: #29bf12;
+}
+
+.product {
+  margin-top: 1cm;
+  background-color: white;
+  padding: 0.2cm;
+  height: 7cm;
+  width: 7cm;
+}
+
+.nameofthepro {
+  color: black;
+  text-decoration: none;
+}

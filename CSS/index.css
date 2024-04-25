@@ -1,0 +1,81 @@
+body {
+    overflow-x: hidden;
+}
+
+.box1 {
+    margin-top: 2cm;
+}
+
+.arrows {
+    position: relative;
+    top: 6cm;
+    left: 37cm;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 2cm;
+    width: 2cm;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.same {
+    color: white;
+    font-size: 36px;
+    transition: .3s;
+}
+
+.dash {
+    transform: translateX(8px);
+}
+
+.arrow {
+    transform: translateX(-10px);
+}
+
+.arrows:hover {
+    background-color: #1500ff;
+}
+
+.arrows:hover .dash {
+    transform: translateX(-2px);
+}
+
+.arrows:hover .arrow {
+    transform: translateX(-5px);
+}
+
+.bigbox {
+    background-color: #29bf12;
+    padding: 1cm;
+    display: flex;
+    gap: 2cm;
+    flex-wrap: wrap;
+}
+
+.daily {
+    transform:
+        perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg) scale(0.9, 0.9);
+    border-radius: 20px;
+    border: 5px solid #e6e6e6;
+    box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease-in-out transform;
+    cursor: pointer;
+    padding: 20px;
+    width: 6cm;
+    height: 7cm;
+}
+
+.daily:hover {
+    transform: translate3d(0px, 0px, -250px);
+}
+
+.daily:hover .n {
+    color: #8338ec
+}
+
+.link3 {
+    text-decoration: none;
+    color: black;
+}

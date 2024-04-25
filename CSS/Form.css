@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.required::after {
+    content: "*";
+    color: red;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8cm;
+    width: 14cm;
+}
+
+input {
+    height: 1cm;
+    width: 80%;
+    border-radius: 5px;
+    padding: 2px;
+    padding-left: 0.4cm;
+    border: 2px solid white;
+    margin-top: 6px;
+    outline: 0;
+    background-color: transparent;
+    color: white;
+    font-family: 'Chakra Petch';
+    font-size: 1.3rem;
+}
+
+label {
+    margin-top: 6px;
+    color: white;
+    font-family: 'Chakra Petch';
+    font-size: 1.3rem;
+    user-select: none;
+}
+
+.submit {
+    cursor: pointer;
+    display: inline;
+    margin-top: 4px;
+    height: 1cm;
+    border-radius: 5px;
+    font-family: 'Black Ops One';
+    font-size: 1rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+span {
+    color: red;
+}

@@ -1,0 +1,262 @@
+/*-------------------------------------------------------------------------------import-------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*Payment Method* 'Bebas Neue'*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+/*input box*  'Roboto Condensed'*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*Address 'Roboto'*/
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+/*Price detail 'Chakra Petch'*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("/Image/Pback.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*----------------------------------------------------------------------------header-----------------------------------------------------------------------------*/
+
+.logo {
+    height: 3cm;
+    width: 3cm;
+    border-radius: 50%;
+}
+
+/*----------------------------------------------------------------------------overall--------------------------------------------------------------------------*/
+
+.main {
+    margin-top: 1cm;
+    padding: 1cm;
+    display: flex;
+    flex-direction: column;
+}
+
+.submain {
+    display: flex;
+    gap: 5cm;
+}
+
+
+
+/*----------------------------------------------------------------Address--------------------------------------------------------------------------------*/
+
+.addressandpayment {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    backdrop-filter: blur(20px);
+    padding: 1.8cm;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #7cb518;
+    border-radius: 11px;
+    transition: 1s;
+}
+
+.a {
+    background-color: #7cb518;
+    padding: 0.4cm;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    color: white;
+    user-select: none;
+}
+
+.add {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1rem;
+    font-family: 'Roboto';
+    border: 2px solid #7cb518;
+    color: #7cb518;
+    margin: 28px;
+    width: 27%;
+}
+
+.all {
+    gap: 10cm;
+    padding: 34px;
+    border: 2px solid black;
+    margin: 1cm;
+    display: none;
+}
+
+.prefill {
+    font-family: 'Roboto Condensed';
+}
+
+#name {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#userform {
+    display: none;
+    position: absolute;
+    border: 2px solid green;
+    background: transparent;
+    border-radius: 5px;
+    padding: 1cm;
+    left: 1cm;
+    top: 5cm;
+    backdrop-filter: blur(20px);
+    width: 21cm;
+    height: 21cm;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6cm;
+}
+
+.foruser {
+    font-family: 'Chakra Petch';
+    color: black;
+    border: 1px solid black;
+    border-radius: 16px;
+    outline: none;
+    padding: 10px;
+    font-size: 1.3rem;
+    margin-top: 8px;
+    background: transparent;
+    width: 70%;
+}
+
+label {
+    font-family: 'Chakra Petch';
+    color: black;
+    user-select: none;
+}
+
+span {
+    color: red;
+}
+
+#addtheaddress {
+    background-color: #7cb518;
+    color: white;
+    width: 30%;
+}
+
+#cancel {
+    background-color: red;
+    width: 30%;
+    cursor: pointer;
+}
+
+#addtheaddress:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5cm;
+}
+
+/*-----------------------------------------------------Payment Method--------------------------------------------------------------------------------------------*/
+
+.textpay {
+    background-color: #7cb518;
+    padding: 0.4cm;
+}
+
+.method {
+    border: 2px solid #7cb518;
+    margin-top: 1cm;
+    border-radius: 11px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.option {
+    padding: 30px;
+    font-family: 'Bebas Neue';
+    font-size: 2rem;
+}
+
+.option:hover {
+    background-color: green;
+    transition: 1s;
+}
+
+.option:hover .ways {
+    color: white;
+}
+
+.ways {
+    margin-left: 16px;
+    color: #7cb518;
+    font-family: 'Bebas Neue';
+    font-size: 2rem;
+}
+
+#cash {
+    color: #7cb518;
+}
+
+.priceDetail {
+    background-color: #fff;
+    border-radius: 2px;
+    height: 7cm;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+    width: 9cm;
+    user-select: none;
+}
+
+.pd {
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 13px 24px;
+    font-weight: 500;
+    color: #878787;
+}
+
+.pamountdetail {
+    padding: 13px 24px;
+}
+
+td {
+    width: 84%;
+}
+
+.total {
+    padding: 13px 24px;
+    font-size: 18px;
+    font-weight: 500;
+    border-top: 1px dashed #e0e0e0;
+}
+
+.same1 {
+    width: 79%;
+}
+
+.pay {
+    width: 5cm;
+    height: 0.8cm;
+    margin-top: 1cm;
+    border-radius: 5px;
+    background-color: #7cb518;
+    font-size: 16px;
+    padding-left: 25px;
+    padding-top: 3px;
+    font-family: 'Chakra Petch';
+    cursor: pointer;
+    margin-left: 74px;
+    display: none;
+}
+
+.pay:hover {
+    background-color: darkgreen;
+}

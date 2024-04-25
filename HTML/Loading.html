@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Screen</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: black;
+        }
+
+        .box1 {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(#031f03, #80de80, #05ef05);
+            border-radius: 50%;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        span {
+            border: 3px solid #e3901c;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            animation: rotating 2s infinite linear;
+        }
+
+        .box1 span:nth-child(1) {
+            border-radius: 34% 66% 65% 35% / 35% 32% 68% 65%;
+        }
+
+        .box1 span:nth-child(2) {
+            border-radius: 44% 56% 34% 66% / 68% 61% 39% 32%;
+            animation-direction: reverse;
+        }
+
+        .box1 span:nth-child(3) {
+            animation-duration: 3s;
+            border-radius: 75% 25% 65% 35% / 68% 73% 27% 32%;
+        }
+
+        @keyframes rotating {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <span></span>
+        <span></span>
+        <span></span>
+        <h2>Loading...</h2>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="/CSS/6_PaymentForm.css">
+    <link rel="stylesheet" href="/CSS/SelectionAndScrollBar.css">
+    <link rel="stylesheet" href="/CSS/Loading.css">
+</head>
+
+<body>
+    <header>
+        <a href="/HTML/index.html"><img src="/Image/logo.jpg" alt="logo" class="logo"></a>
+    </header>
+    <div class="main">
+        <div class="overall">
+            <div class="submain">
+                <div class="addressandpayment">
+                    <div class="address">
+                        <span class="a">Adresses</span>
+                        <button class="add" onclick="showtheAddressform()">Add new adress</button>
+                        <div class="all" id="all">
+                            <div class="prefilledaddress">
+                                <div class="prefill" id="name">Name</div>
+                                <div class="prefill" id="number">123456789</div>
+                                <div class="prefill" id="hno">House Number</div>
+                                <div class="prefill" id="stn">Street Name</div>
+                                <div class="prefill" id="city">City</div>
+                                <div class="prefill" id="state1">State</div>
+                                <div class="prefill" id="pincode1">Pincode</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="method">
+                        <div class="textpay">Payment Method</div>
+                        <div class="option" id="upi">
+                            <img src="https://logos-download.com/wp-content/uploads/2021/01/PhonePe_Logo.png" alt="upi"
+                                height="20px">
+                            <span class="ways">UPI</span>
+                        </div>
+                        <div class="option" id="card"><img
+                                src="https://cdn.zeebiz.com/sites/default/files/styles/zeebiz_850x478/public/2019/04/03/80897-sbiclassicdebitcard.JPG?itok=q8-n-xno&c=7649147fcf2247bb7d434e86b73431a2"
+                                alt="debit card" height="20px">
+                            <span class="ways">Debit Card</span>
+                        </div>
+                        <div class="option cash" id="cash"><span class="ways">Cash on Delivery</span></div>
+                    </div>
+                </div>
+                <div class="priceandpayment">
+                    <div class="priceDetail">
+                        <div class="pd">PRICE DETAILS</div>
+                        <div class="pamountdetail">
+                            <table>
+                                <tr>
+                                    <td class="same">Price(1 item)</td>
+                                    <td class="same">Rs1299</td>
+                                </tr>
+                                <tr>
+                                    <td class="same">Delivery Charges</td>
+                                    <td class="same">Rs 10</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="total">
+                            <table>
+                                <tr>
+                                    <td class="same1">Total Payable</td>
+                                    <td class="same1">Rs 1249</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <button type="submit" id="pay" class="pay">Pay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="userform">
+        <label for="name">Full Name<span>*</span></label><span id="nerror"></span>
+        <input type="text" name="name" class="foruser" id="name1" required value="">
+        <label for="number">Phone Number<span>*</span></label><span id="nuerror"></span>
+        <input type="number" name="number" class="foruser" id="number1" required value="">
+        <label for="housenumber">House No/Name<span>*</span></label><span id="herror"></span>
+        <input type="text" name="housenumber" class="foruser" id="housenumber" required value="">
+        <label for="streetname">Street Name<span>*</span></label><span id="serror"></span>
+        <input type="text" name="streetname" class="foruser" id="streetname" required value="">
+        <label for="district">District<span>*</span></label>
+        <input type="text" name="district" class="foruser" id="district" value="Darbhanga" disabled>
+        <label for="state">State<span>*</span></label>
+        <input type="text" name="state" class="foruser" id="state" value="Bihar" disabled>
+        <label for="pincode">Pincode<span>*</span></label>
+        <input type="number" name="pincode" class="foruser" id="pincode" value="847101" disabled>
+        <div class="button">
+            <button type="submit" class="foruser" id="addtheaddress">Add</button>
+            <button class="foruser" id="cancel" onclick="hidetheaddressform()">Cancel</button>
+        </div>
+    </div>
+    <div class="loader">
+        <div class="box2">
+            <span class="nth child1"></span>
+            <span class="nth child2"></span>
+            <span class="nth child3"></span>
+            <h2>Loading...</h2>
+        </div>
+    </div>
+    <script src="/JavaScript/loader.js"></script>
+    <script src="/JavaScript/6_PaymentForm.js"></script>
+</body>
+
+</html>

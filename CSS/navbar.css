@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
+
+.Designer {
+  margin-top: 2cm;
+}
+
+.navbar {
+  position: absolute;
+  top: 3cm;
+  left: 0.1cm;
+  user-select: none;
+}
+
+.navbar1 {
+  display: flex;
+  gap: 3.2cm;
+  margin-top: 1.4cm;
+  color: white;
+  padding: 0.5cm;
+}
+
+.link1 {
+  color: white;
+  text-decoration: none;
+  font-family: 'Lemon', serif;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.link2 {
+  color: black;
+  font-family: 'Lemon', serif;
+}
+
+#aline {
+  height: 53px;
+  background: linear-gradient(to right, #063a06 0%, #05e52b 100%);
+  border: none;
+  border-radius: 20px;
+  transition: .5s ease-in-out;
+}
+
+.nav {
+  width: 4cm;
+  height: 0.8cm;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.typewrite {
+  margin-top: 5cm;
+  margin-left: 2cm;
+}
+
+.order {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.autotype {
+  color: #29bf12;
+}

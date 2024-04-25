@@ -1,0 +1,185 @@
+/* Importing*/
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* overall */
+
+body {
+  background-color: #dee2e6;
+}
+
+/*body*/
+
+.whole {
+  display: flex;
+  margin-top: 1cm;
+  margin-right: 2.9cm;
+}
+
+.smallboxofimage {
+  margin-left: 1.3cm;
+}
+
+.imgpr {
+  margin-top: 0.2cm;
+  cursor: pointer;
+}
+
+.bigboxofimage {
+  margin-left: 1cm;
+}
+
+.information {
+  margin-left: 1cm;
+}
+
+h2 {
+  font-family: 'Lexend';
+}
+
+.pin {
+  font-family: 'Chakra Petch';
+}
+
+.pri {
+  font-family: 'Source Code Pro';
+  user-select: none;
+}
+
+.numofpro {
+  display: flex;
+  background-color: green;
+  width: 3.2cm;
+}
+
+.addr {
+  font-family: 'Rubik';
+  user-select: none;
+}
+
+.dpri {
+  font-family: 'Rubik';
+  user-select: none;
+}
+
+.grow {
+  background-color: green;
+  border-color: green;
+  width: 39px;
+  font-size: 38px;
+  color: white;
+  text-align: center;
+  font-family: 'Rubik';
+  cursor: pointer;
+}
+
+#num {
+  background-color: white;
+  border: 2px solid green;
+  width: 39px;
+  font-size: 39px;
+  text-align: center;
+  font-family: 'Rubik';
+  user-select: none;
+}
+
+.cartimg {
+  display: none;
+}
+
+#cartandimage {
+  transition: 1s;
+  cursor: pointer;
+  background-color: green;
+  border: 2px solid green;
+  padding: 9px;
+  border-radius: 13px;
+  height: 2cm;
+  width: 5.2cm;
+  font-family: 'Rubik';
+}
+
+#addtocart {
+  color: white;
+  font-size: 2rem;
+}
+
+#cartandimage:hover .cartimg {
+  display: inline;
+}
+
+#cartandimage:hover #addtocart {
+  display: none;
+}
+
+.buyimg {
+  display: none;
+}
+
+#buyandimage {
+  cursor: pointer;
+  height: 2cm;
+  width: 5cm;
+  border: 2px solid green;
+  padding: 9px;
+  border-radius: 13px;
+  font-family: 'Rubik';
+}
+
+#buy {
+  color: green;
+  font-size: 2rem;
+}
+
+#buyandimage:hover .buyimg {
+  display: inline;
+}
+
+#buyandimage:hover #buy {
+  display: none;
+}
+
+.wholedes {
+  background-color: white;
+  padding: 20px;
+  width: 120%;
+}
+
+.desPro {
+  border: 1px solid #f0f0f0;
+  font-size: 58px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 45px;
+  letter-spacing: -2.32px;
+  color: #1A2024;
+}
+
+.list {
+  display: flex;
+  gap: 5cm;
+  border: 1px solid #f0f0f0;
+  font-size: 14px;
+  padding: 24px 24px 34px;
+}
+
+.list1 {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  gap: 0.2cm;
+  color: #878787;
+  padding-right: 8px;
+}
+
+.list2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2cm;
+  color: #212121;
+  font-family: 'Roboto';
+}

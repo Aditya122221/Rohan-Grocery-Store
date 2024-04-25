@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colgate</title>
+    <link rel="stylesheet" href="/CSS/2_1_ProductDes.css">
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/navbar.css">
+    <link rel="stylesheet" href="/CSS/SelectionAndScrollBar.css">
+    <link rel="stylesheet" href="/CSS/Loading.css">
+</head>
+
+<body>
+    <header>
+        <div class="header" id="logo"> <a href="/HTML/index.html"><img src="/Image/logo.jpg" alt="Logo" height="60cm"
+                    width="60cm" id="im"></a></div>
+        <div class="input-box">
+            <i class="uil uil-search"></i>
+            <input type="text" placeholder="Search here..." />
+            <button class="button">Search</button>
+        </div>
+        <div class="header" id="log">
+            <div class="do" id="name">
+                <div><img src="/Image/login.png" alt="log in" height="24" width="24"></div>
+                <div>Log In</div>
+                <div><img src="/Image/upload.png" alt="uparrow" height="20cm" width="20cm" class="uparrow" id="up">
+                </div>
+            </div>
+            <div class="dropdown" id="ddown">
+                <ul>
+                    <li><a href="/HTML/Login.html" class="link2">Log In</a></li>
+                    <li><a href="#" class="link2">Orders</a></li>
+                    <li><a href="#" class="link2">Cart</a></li>
+                    <li><a href="#" class="link2">About Us</a></li>
+                    <li><a href="#" class="link2">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="whole">
+        <div class="smallboxofimage">
+            <div class="imgpr"><img src="/Image/Colgate/1.png" alt="" height="50cm" width="50cm" id="img1"
+                    onmouseover="changeImg1()"></div>
+            <div class="imgpr"><img src="/Image/Colgate/2.png" alt="" height="50cm" width="50cm" id="img2"
+                    onmouseover="changeImg2()"></div>
+            <div class="imgpr"><img id="img3" src="/Image/Colgate/3.png" alt="" width="50cm" height="50cm"
+                    onmouseover="changeImg3()"></div>
+            <div class="imgpr"><img id="img4" src="/Image/Colgate/4.png" alt="" height="50cm" width="50cm"
+                    onmouseover="changeImg4()"></div>
+            <div class="imgpr"><img id="img5" src="/Image/Colgate/5.png" alt="" height="50cm" width="50cm"
+                    onmouseover="changeImg5()"></div>
+            <div class="imgpr"><img id="img6" src="/Image/Colgate/6.webp" alt="" height="50cm" width="50cm"
+                    onmouseover="changeImg6()"></div>
+        </div>
+        <div class="bigboxofimage"><img id="bigbox" src="/Image/Colgate/1.png" alt="" height="500cm" width="500cm">
+        </div>
+        <div class="information">
+            <h2>Colgate Strong India's No.1 Toothpaste (600 g, Pack of 3)</h2>
+            <div class="pri">&#8377;327.00</div><br><br><br><br>
+            <div class="addr">Delivering to: <span style="font-weight: bold;">847101</span></div><br>
+            <hr style="width:12cm;">
+            <div class="dpri"><span style="color: green;">Free delivery</span> | <span style="font-weight: bold;">By
+                    Thursday 25 Jan</span></div><br><br><br>
+            <div class="numofpro">
+                <button class="grow" id="minus">-</button>
+                <div id="num">1</div>
+                <button class="grow" id="plus">+</button>
+            </div><br><br>
+            <div class="buyandcart">
+                <button id="cartandimage">
+                    <div class="cartimg"><img src="/Image/shopping-cart.png" alt="shoppingcart" style="height:1cm;">
+                    </div>
+                    <div id="addtocart">Add to Cart</div>
+                </button>
+                <a href="" style="text-decoration: none;"><a href="/HTML/PaymentForm.html"><button id="buyandimage">
+                            <div class="buyimg"><img src="/Image/payment-method.png" alt="buy now" style="height:1cm;">
+                            </div>
+                            <div id="buy">Buy Now</div></a>
+                    </button></a>
+            </div>
+        </div>
+    </div>
+    <div class="emptyfull">
+        <div class="wholedes">
+            <h2 class="desPro">Product <b>Specification</b></h2>
+            <div class="list">
+                <div class="list1">
+                    <div class="cap">Brand</div>
+                    <div class="cap">Quantity</div>
+                    <div class="cap">Minimum Age</div>
+                    <div class="cap">Maximum Age</div>
+                    <div class="cap">Ideal for</div>
+                    <div class="cap">Pack of</div>
+                    <div class="cap">Maximum Shelf Life</div>
+                </div>
+                <div class="list2">
+                    <div class="na">Colgate</div>
+                    <div class="na">600gm</div>
+                    <div class="na">4 Years</div>
+                    <div class="na">90 Years</div>
+                    <div class="na">Adults</div>
+                    <div class="na">1</div>
+                    <div class="na">24 Months</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="loader">
+        <div class="box2">
+            <span class="nth child1"></span>
+            <span class="nth child2"></span>
+            <span class="nth child3"></span>
+            <h2>Loading...</h2>
+        </div>
+    </div>
+    <script src="/JavaScript/loader.js"></script>
+    <script src="/JavaScript/Productdes.js"></script>
+    <script src="/JavaScript/log.js"></script>
+</body>
+
+</html>

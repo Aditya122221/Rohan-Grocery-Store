@@ -1,0 +1,71 @@
+/*import*/
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+.logo {
+    border-radius: 50%;
+    position: absolute;
+    top: 0cm;
+    left: 0cm;
+}
+
+.overall {
+    display: flex;
+    background-color: transparent;
+    backdrop-filter: blur(70px);
+    flex-direction: column;
+    border-radius: 5px;
+    margin-top: 3cm;
+    height: 82vh;
+    overflow: auto;
+    width: 40%;
+    position: absolute;
+    top: -12px;
+    left: 14cm;
+}
+
+.button {
+    display: flex;
+    margin-top: 0.5cm;
+    gap: 1cm;
+}
+
+#sign {
+    background-color: #38b000;
+    color: white;
+    width: 4cm;
+}
+
+#sign:hover {
+    background-color: green;
+    border: 2px solid green;
+}
+
+#reset {
+    border: 2px solid #38b000;
+    width: 4cm;
+}
+
+#reset:hover {
+    background-color: green;
+    border: 2px solid #38b000;
+}
+
+.login {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Lemon';
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+
+a {
+    color: white;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #38b000;
+}
